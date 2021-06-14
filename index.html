@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+             Array
+        </title>
+    </head>
+    <body>
+  <img  id="family_mem_img"> 
+    <h4 id="family_mem_name"></h4> 
+    <button onclick="update();">Next</button>   
+    </body>
+    </html>
+    <script>
+        var images = 
+["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSookz6-IyKh4azcRzEXq8C9KJ0jICtU9VT-XzvHRucfADpyJ0_gfGCv5iWWq2w1EjKG04&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTV0JcODOzjg575mehPnBCmlvQ24F856xUIXsPwg1RcJXpzxv00fumrBNlHhq66g9B9Ik&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynD9Kro2vEglLVUrb787Mrg0GIo7_KMWRUe59br1inanLE17vBFNd5xYMVwp6x7ZLldI&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJtzfMpu4QtAUCL7GtcCseMFBNIfDuE0QgDu6Heae74QVqtPyRXgtP2OS_vS3q2Ablzs&usqp=CAU"];
+
+var fn = ["Mark Twain","Lewis Carrol"," Rabindra Nath Tagore","Arthur Conan Doyle"];
+var numbers_of_family_mem_in_array = 3;
+
+var i = 0;
+function update(){
+    document.getElementById("family_mem_img").src= images[i];
+    document.getElementById("family_mem_name").innerHTML = fn[i];
+
+
+i++;
+if (i > numbers_of_family_mem_in_array)
+
+
+{
+    i = 0;
+}
+}
+
+
+
+    </script>
